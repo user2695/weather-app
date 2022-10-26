@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Button from "@mui/material/Button";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import { Icon } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
 import "../App.css";
 
@@ -29,6 +25,7 @@ function Top() {
   function handleSubmit(e) {
     e.preventDefault();
     setName(city);
+    e.target.reset();
   }
 
   function handleChange(e) {
@@ -37,7 +34,7 @@ function Top() {
   useEffect(() => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${process.env.REACT_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${process.env.REACT_APP_KEY}`
       )
       .then((response) => {
         console.log(response.data);
@@ -57,7 +54,7 @@ function Top() {
           <p>Today in {name}</p>
         </div>
         <div className="icons">
-          <img src={`http://openweathermap.org/img/wn/${icon}.png`} alt="" />
+          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
         </div>
 
         <div className="main__right">
@@ -76,13 +73,10 @@ function Top() {
       <div className="main-bottom">
         <form className="search" onSubmit={handleSubmit}>
           <input className="input" onChange={handleChange}></input>
-          <button>
-            <SearchIcon></SearchIcon>
-          </button>
+          <button>Search</button>
         </form>
       </div>
     </>
   );
 }
-
 export default Top;

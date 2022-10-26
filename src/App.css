@@ -1,154 +1,3 @@
-/* ul {
-  margin: 0px;
-  display: flex;
-  justify-content: flex-end;
-  /* align-items: center; */
-/*
-  background-image: linear-gradient(
-    45deg,
-    rgba(130, 243, 37, 0.74),
-    rgba(2, 57, 129, 0.877)
-  );
-  padding: 0px 25px;
-  box-shadow: 2px 2px 2px 2px;
-}
-li {
-  display: inline-block;
-  padding: 10px 20px;
-}
-a {
-  text-decoration: none;
-  font-family: monospace;
-  font-size: large;
-  color: white;
-}
-.signup-btn {
-  font-family: monospace;
-  text-align: center;
-  width: 150px;
-  background-color: #191a19;
-  color: white;
-  padding: 5px;
-  border: 1px solid rgb(202, 177, 177);
-  border-radius: 15px;
-}
-.signup-btn:hover,
-.signup-btn:focus {
-  font-family: monospace;
-  font-size: large;
-  background-color: white;
-  color: #191a19;
-  cursor: pointer;
-} */
-
-/* main div */
-/* .middle-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(
-    45deg,
-    rgba(130, 243, 37, 0.74),
-    rgba(2, 57, 129, 0.877)
-  );
-  width: 80%;
-  margin: 6%;
-  padding: 2% 5%;
-  border-radius: 20px;
-  border: 2px solid black; */
-/* box-shadow: 4px 4px 4px; */
-/* }
-.section-first {
-  display: inline-block;
-  max-width: 30%;
-  margin: 10px;
-  border: 2px solid black;
-  box-shadow: 4px 4px 4px;
-  padding: 2% 2%;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 15px;
-}
-.heading {
-  font-family: monospace;
-  font-size: xxx-large;
-  text-align: center;
-  color: black;
-}
-.section-paragraph {
-  font-family: monospace;
-  text-align: center;
-  font-size: large;
-  color: whitesmoke;
-}
-
-.input {
-  margin: 25px 25%;
-  font-family: monospace;
-  text-align: center;
-  font-size: large;
-  width: 50%;
-  border: 1px solid black;
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px 1px;
-  background-color: rgba(221, 247, 200, 0.514);
-}
-.button {
-  margin: 25px 25%;
-  font-family: monospace;
-  text-align: center;
-  width: 150px;
-  background-color: #191a19;
-  color: white;
-  padding: 5px;
-  border: 1px solid rgb(202, 177, 177);
-  border-radius: 15px;
-}
-.button:hover {
-  background-color: white;
-  color: #191a19;
-  cursor: pointer;
-}
-
-.section-second {
-  display: inline-block;
-  font-family: monospace;
-  font-size: large;
-  margin: 0px 30px;
-  background-image: linear-gradient(
-    45deg,
-    rgba(64, 243, 10, 0.308),
-    rgba(110, 82%, 53%, 0.404)
-  );
-  border-radius: 25px;
-  border: 2px solid black;
-  box-shadow: 4px 4px 4px;
-  padding: 2% 10%;
-  text-align: center;
-  vertical-align: middle;
-}
-.city {
-  color: black;
-}
-.details {
-  color: whitesmoke;
-}
-.temp {
-  font-size: xxx-large;
-  color: whitesmoke;
-  font-weight: 700;
-} */
-
-/* * {
-  box-sizing: border-box;
-} */
-
-.main {
-  border-radius: 20px;
-  margin: 10px;
-  min-height: 700px;
-  background: linear-gradient(57deg, rgb(51, 180, 212), rgb(168, 253, 98));
-}
 .main-div {
   display: flex;
   justify-content: center;
@@ -161,24 +10,6 @@ a {
     margin: 20px 10%;
     padding: 20px;
   }
-}
-
-.circle-left {
-  background-color: rgba(51, 180, 212, 0.322);
-  padding: 15%;
-  border-radius: 50%;
-  position: absolute;
-  left: -60px;
-  top: 200px;
-}
-.circle-right {
-  background-color: rgba(168, 253, 98, 0.32);
-  padding: 15%;
-  border-radius: 50%;
-  max-width: 300px;
-  position: absolute;
-  right: -40px;
-  top: 10px;
 }
 
 .main__left {
@@ -239,7 +70,6 @@ h1 {
     margin: 0 20%;
   }
 }
-
 .main-bottom {
   border-radius: 20px;
   background: none;
@@ -263,7 +93,8 @@ h1 {
   align-items: center;
 }
 .input {
-  border: 1px solid rgb(102, 100, 100);
+  border: 1px solid rgb(255, 254, 254);
+  text-align: center;
   background: none;
   border-radius: 6px;
   padding: 5px;
@@ -271,11 +102,75 @@ h1 {
   position: relative;
   font-family: monospace;
   font-size: larger;
+  color: aliceblue;
+}
+.input:focus-visible {
+  outline: none;
 }
 
-.button {
-  background-color: black;
-  width: 80px;
-  padding: 4px;
-  border-radius: 10px;
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "arial", heletica, sans-serif;
+  font-size: 12px;
+  background: #2980b9
+    url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png")
+    repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
+}
+
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-ms-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-o-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
