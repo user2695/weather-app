@@ -73,7 +73,9 @@ function Top() {
       <div className="main-bottom">
         <form className="search" onSubmit={handleSubmit}>
           <input className="input" onChange={handleChange}></input>
-          <button>Search</button>
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
         </form>
       </div>
     </>
