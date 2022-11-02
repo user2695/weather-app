@@ -1,8 +1,8 @@
 .main-div {
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
+  margin: 0 5px;
 }
 @media (max-width: 40rem) {
   .main-div {
@@ -15,8 +15,8 @@
 .main__left {
   color: whitesmoke;
   display: inline-block;
-  padding: 5%;
-  margin: 3%;
+  padding: 2%;
+  margin: 2%;
 }
 @media (max-width: 40rem) {
   .main__left {
@@ -60,9 +60,9 @@ h1 {
 
 .main__right {
   display: inline-block;
-  padding: 3%;
-  margin: 9%;
   color: whitesmoke;
+  padding: 2%;
+  margin: 3%;
 }
 @media (max-width: 40rem) {
   .main__right {
@@ -89,20 +89,26 @@ h1 {
 }
 .search {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 30%;
+  margin-top: 40px;
+  padding-left: 70px;
 }
 .input {
+  width: 300px;
   border: 1px solid rgb(255, 254, 254);
   text-align: center;
   background: none;
   border-radius: 6px;
   padding: 5px;
-  margin: 10px;
+  margin: 0 10px;
   position: relative;
   font-family: monospace;
   font-size: larger;
+  color: white;
+}
+::placeholder {
   color: black;
+  opacity: 1;
 }
 .input:focus-visible {
   outline: none;
@@ -175,5 +181,50 @@ body {
   }
   to {
     background-position: 500px 0;
+  }
+}
+
+.forecast {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 100px;
+  border-radius: 13px;
+}
+.forecast-heading {
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+}
+
+.forecast-list {
+  font-family: monospace;
+  padding: 1%;
+  margin: 30px 25px;
+  display: block;
+  background-color: #2980b9;
+  color: black;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 13px;
+}
+.week-icons {
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 40rem) {
+  .forecast {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 40rem) {
+  .forecast-list {
+    padding: 20px;
+    margin: 20px;
   }
 }
